@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="css/vender/css-circular-prog-bar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/vender/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vender/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="css/vender/circular.css">
+    
+
+    <link href="images/favicon.png" rel="icon">
+    <title>Darshan Pawar</title> 
+
+    <style>
+
+      ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.75); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(0,rgba(252, 92, 125, 0.75),rgba(106, 130, 251, 0.75));
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(0,rgba(252, 92, 125, 0.75),rgba(106, 130, 251, 0.75));
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbartop{
+      position: fixed;
+      background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+      z-index: 2;
+      width: 99.5vw;
+      
+      
+    }
+    
+    header{
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.75),rgba(18, 65, 114, 0.75)) , url("images/bghome.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    }
+
+    html{
+      font-size: 20px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+
+    }
+
+    .iconsize{
+      margin: 15px;
+      height: 75px;
+      width: 75px;
+      float: left;
+      
+    }
+
+    .headerheading{
+      font-size: 200%;
+      font-weight: 900;
+      color: white;
+      padding-top: 30px;
+      word-spacing: 5px;
+      letter-spacing: 5px;
+      float: left;
+      margin-right: 200px;
+    }
+
+    h1{
+      margin: 0px;
+    }
+
+   
+    .navbarmenuactive{
+      font-weight: 600;
+      color: white;
+      font-size: 125%;
+      text-decoration: none;  
+      display: inline;
+    }
+
+    .navmenu{
+      float: right;
+      list-style: none;
+    }
+
+    .navmenu li{
+      margin-top: 15px;
+      display: inline-block;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .navmenu li a:link,
+    .navmenu li a:visited{
+      font-weight: 300;
+      color: white;
+      font-size: 125%;
+      text-decoration: none;
+      padding: 5px 0px;
+    }
+    .navmenu li a:hover
+    {
+      font-weight: 300;
+      color: #2F80ED;
+      font-size: 125%;
+      text-decoration: none;
+      border-bottom: 2px solid #2F80ED;
+    }
+
+    .navmenu li a:active{
+      border-bottom: 2px solid #2F80ED;
+    }
+
+    .namebar{
+      position: absolute;
+      top: 300px;
+      left: 200px;
+      border-left: 7px solid #2F80ED;
+      height: 260px;
+      padding-left: 20px;
+    }
+
+    .firsthead{
+      font-size: 590%;
+      color: white;
+      font-weight: 400;
+      margin: 5px;
+      margin-top: -25px;
+      height: 85px;
+    }
+
+    .lasthead{
+      font-size: 805%;
+      color: white;
+      font-weight: 400;
+      margin: 0px;
+    }
+
+    .headdesc{
+      font-size: 130%;
+      font-weight: 200;
+      color: white;
+      margin-top: -20px;
+      margin-left: 10px;
+    }
+
+    .headbutton{
+      background-color: #2F80ED;
+      color: white;
+      font-size: 150%;
+      border: 2px solid #2F80ED;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      padding: 5px 20px;
+      position: absolute;
+      top:290px;
+      left: 190px;
+    }
+
+    .tagbar{
+      position: absolute;
+      top: 500px;
+      left: 1100px;
+    }
+
+    .tagbar h1{
+      font-size: 400%;
+      font-family: 'Anklepants';
+
+    }
+
+    .about{
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.75),rgba(18, 65, 114, 0.75)) , url("images/bgabout.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    }
+
+    p{
+      margin: 0px;
+    }
+
+    .aboutpara{
+      font-weight: 200;
+      font-family: 'Titillium Web', sans-serif;
+      color: white;
+      margin: 120px;
+      font-size: 150%;
+    }
+
+    .aboutheading{
+      font-size: 400%;
+      color: white;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      padding-top: 125px;
+      margin-left: 100px;
+    }
+
+    .projects{
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.75),rgba(18, 65, 114, 0.75)) , url("images/bgprojects.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    }
+
+    .projects img{
+      opacity: 0.5;
+      height: 80px;
+      width: 80px;
+      margin-top:auto;
+    margin-bottom:auto;
+    text-align:center;
+
+    }
+    
+    .projects h2{
+      font-size: 225%;
+      font-weight: 200;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .projects p{
+      font-size: 100%;
+      font-weight: 100;
+      color: white;
+      text-align: center;
+     padding-top: 20px;
+     margin: 0 auto;
+    }
+
+    .projectblock{
+      background: linear-gradient(90deg,rgba(252, 92, 125, 0.7),rgba(106, 130, 251, 0.7));
+      margin-top: 40px;
+      margin-left: 100px;
+      width: 500px;
+      height: 300px;
+      border-radius: 15px;
+      float: left;
+      
+    }
+
+    .button{
+      border: 2px solid #2F80ED;
+      border-radius: 5px;
+      font-weight: 400;
+      color: white;
+      font-size: 80%;
+      text-decoration: none;
+      padding: 5px 20px;
+      display: inline-block;
+      background-color: #2F80ED;
+    }
+
+    .projectblock:hover {
+      background: linear-gradient(90deg,rgba(252, 92, 125, 1),rgba(106, 130, 251, 1));
+      box-shadow: 1px 0px 50px rgba(106, 130, 251, 0.3),-1px 0px 50px rgba(252, 92, 125, 0.3);
+      transition: all 0.5s ;
+    }
+
+    .expertise{
+      background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.75),rgba(18, 65, 114, 0.75)) , url("images/bgexpertise.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: 'Titillium Web', sans-serif;
+      height: 100vh;
+      margin: 0px;
+    }
+    
+    .circularbar{
+      width: 600px;
+      float: left;
+
+      margin-left: 250px;
+      margin-top: 10px;
+      margin-right: 50px;
+      align-content: center;
+      
+    }
+
+    .expertisecolorred{
+      border: 0.45em solid rgb(173, 33, 29);
+    }
+
+    h3{
+      float: left;
+      font-size: 200%;
+      font-weight: 400;
+      margin-top: 50px;
+      color: white;
+      width: 165px;
+      text-align: center;
+    }
+    
+    .icon{
+      font-size: 350%;
+      margin-top: 30px;
+      float: left;
+      width: 200px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .iconorange{
+      color: #e67e22;
+    }
+
+    
+    .iconblue{
+      color: #45aaf2;
+    }
+
+    .icondarkblue{
+      color: #4b7bec;
+    }
+    
+    .iconyellow{
+      color: #fed330;
+    }
+
+    .iconlightyellow{
+      color: #ffdd59;
+    }
+
+    .icondarkorange{
+      color: #ff4d4d;
+    }
+
+    .iconpurple{
+      color: #a55eea;
+    }
+
+    .iconindigo{
+      color: #9b59b6;
+    }
+
+    .contact{
+      background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.75),rgba(18, 65, 114, 0.75)) , url("images/bgcontact.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: 'Titillium Web', sans-serif;
+      height: 100vh;
+      margin: 0px;
+    }
+
+    ::placeholder {
+      color: white;
+      opacity: 0.7; /* Firefox */
+    }
+
+    .contactdiv{
+      height: 460px;
+      width: 600px;
+      margin: auto;
+    }
+
+    .firstname{
+      height: 60px;
+      width: 260px;
+      background-color: rgba(18, 65, 114, 0.70);
+      font-size: 90%;
+      font-weight: 100;
+      color: white;
+      border: none;
+      padding-left: 15px;
+      margin: 10px;
+    }
+
+    .email{
+      height: 60px;
+      width: 560px;
+      background-color: rgba(18, 65, 114, 0.70);
+      font-size: 90%;
+      font-weight: 100;
+      color: white;
+      border: none;
+      padding-left: 15px;
+      margin: 10px;
+    }
+
+    .message{
+      height: 160px;
+      width: 560px;
+      background-color: rgba(18, 65, 114, 0.70);
+      font-size: 90%;
+      font-weight: 100;
+      color: white;
+      border: none;
+      padding-left: 15px;
+      margin: 10px;
+      max-width: 560px;
+      max-height: 560px;
+      padding-top: 15px;
+    }
+
+    .sendmessage{
+      height: 50px;
+      width: 160px;
+      text-align: center;
+      background-color: #2F80ED;
+      color: white;
+      font-size: 100%;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      margin: 10px;
+      float: left;
+    }
+
+    .downloadresume{
+      height: 50px;
+      width: 200px;
+      text-align: center;
+      background-color: white;
+      color: #2F80ED;
+      border-radius: 5px;
+      border: none;
+      font-size: 100%;
+      font-weight: 700;
+      margin: 10px;
+      float: right;
+    }
+
+    .footerdown{
+      background-color: #124172;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Titillium Web', sans-serif;
+      height: 28.5vh;
+      width: 99.5vw;
+      margin: 0px;
+      position: bottom;
+    }
+
+    .downtag{
+      text-align: center;
+      font-size: 200%;
+      font-weight: 300;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .footersocial{
+      height: 60px;
+      width: 75px;
+      border-radius: 50px;
+      color: white;
+      padding-top: 15px;
+      border-color: white;
+      border-style: solid;
+      text-align: center;
+      border-width: 3px;
+      float: left;
+      margin: 0px 55px;
+    }
+
+    .socialicons{
+      height: 100px;
+      width: 1200px;
+      text-align: center;
+      margin: 10px auto;
+    }
+
+    .socialiconstyle{
+      color: white;
+      font-size: 200%;
+      padding-top: 50px;
+    }
+
+    .copyright{
+      margin: 10px auto;
+      color: white;
+      font-size: 90%;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-weight: 100;
+    }
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    
+    <header id="home">
+
+      <nav class="navbartop">
+        <img class="iconsize" src="images/favicon.png" alt="">
+        <h1 class="headerheading">PORTFOLIO</h1>
+        <ul class="navmenu">
+          <li> <a  href="#home">HOME</a> </li>
+          <li> <a  href="#about">ABOUT</a> </li>
+          <li> <a  href="#projects">PROJECTS</a> </li>
+          <li> <a  href="#expertise">EXPERTISE</a> </li>
+          <li> <a  href="#contact">CONTACT</a> </li>
+          
+        </ul> 
+      </nav>
+
+
+      <div class="namebar">
+        <h1 class="firsthead">DARSHAN</h1>
+        <h1 class="lasthead">PAWAR</h1>
+        <p class="headdesc">&lt; Designer and Developer &gt; </p>
+        <p><a class="headbutton" href="#contact"> CONTACT </a></p>
+      </div>
+      <div class="tagbar">
+        <h1 class="firsthead">STAY FIT.</h1>
+        <h1 class="lasthead">STAY CREATIVE.</h1>
+      </div>
+    </header>
+    
+
+    <div class="about" id="about">
+      <h1 class="aboutheading">About</h1>
+      <div class="section group">
+        <div class="col span-1-of-2">
+            <p class="aboutpara"> Hello, my name is Darshan Pawar and I’m a UI & UX designer. <br>
+            I have a passion for the beauty, whether simple or extravagant. <br>
+            I also love coding and typography. </p>
+            <p class="aboutpara"> I was born in Pune, but now I live in Mumbai. So, I’m <br>
+              Indian and like all Indian people, I love Vada Pav and Chai. And… <br>
+              of course, I always say “Nice One!” </p>
+        </div>
+
+        <div class="col span-1-of-2">
+          <p class="aboutpara"> I graduated @ Smt. Kashibai Navale College of Engineering. <br>
+            where I discovered my passion for problem-solving declined <br>
+            to Programming and Designing.</p>
+          <p class="aboutpara"> I am currently working @EcellSKNCOE as Technical Head. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <h1 class="aboutheading">Projects & Hackathon</h1>
+      <div class="section group">
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/alogo.png"></p>
+          <h2>Attendence Manager</h2>
+          <p> This is an Application created for College and <br>
+            School Purpose and also Staff can also Use that. </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/blogo.png"></p>
+          <h2>The Lift App</h2>
+          <p>  This is an Application created for working  <br>
+            and Studying Students who want ride every time.  </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/alogo.png"></p>
+          <h2>Attendence Manager</h2>
+          <p> This is an Application created for College and <br>
+            School Purpose and also Staff can also Use that. </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/alogo.png"></p>
+          <h2>Attendence Manager</h2>
+          <p> This is an Application created for College and <br>
+            School Purpose and also Staff can also Use that. </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/alogo.png"></p>
+          <h2>Attendence Manager</h2>
+          <p>This is an Application created for College and<br>
+            School Purpose and also Staff can also Use that. </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+        <div class="span span-1-of-6 projectblock">
+          <p><img src="images/alogo.png"></p>
+          <h2>Attendence Manager</h2>
+          <p> This is an Application created for College and <br>
+            School Purpose and also Staff can also Use that. </p>
+            <p><a class="button" href=""> Visit Work </a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="expertise" id="expertise">
+      <h1 class="aboutheading">My Expertise</h1>
+      <div class="section group">
+
+
+        <div class="span span-1-of-2 circularbar">
+            <div class="c100 p80 orange">
+                <span >80%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+            </div>
+            <i class="fab fa-html5 icon iconorange"></i>
+            <h3>HTML 5</h3>
+            
+            
+            
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <h3>JAVA</h3>
+          <i class="fab fa-java icon iconblue"></i>
+          <div class="c100 p60 blue">
+              <span>60%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <h3>CSS 3</h3>
+          <i class="fab fa-css3-alt icon icondarkblue"></i> 
+          <div class="c100 p80 darkblue">
+              <span>80%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <div class="c100 p60 yellow">
+              <span>60%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+          <i class="fab fa-python icon iconyellow"></i>
+            <h3>PYTHON</h3>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <div class="c100 p85 lightyellow">
+              <span>85%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+          <i class="fab fa-js icon iconlightyellow"></i>
+            <h3>JAVASCRIPT</h3>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <h3>REACT</h3>
+          <i class="fab fa-react icon icondarkorange"></i>
+          <div class="c100 p30 darkorange">
+              <span>30%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <h3>PHP</h3>
+          <i class="fab fa-php icon iconpurple"></i>
+          <div class="c100 p70 purple">
+              <span>70%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="span span-1-of-2 circularbar">
+          <div class="c100 p20 indigo">
+              <span>20%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+          </div>
+          <i class="fab fa-node-js icon iconindigo"></i>
+            <h3>NODE.JS</h3>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="contact" id="contact">
+      <h1 class="aboutheading">Contact</h1>
+      
+      <div class="contactdiv">
+        <input type="text" placeholder="Fist Name" class="firstname">
+        <input type="text" placeholder="Last Name" class="firstname">
+        <input type="text" placeholder="Email" class="email">
+        <textarea placeholder="Message" class="message"></textarea>
+        <button class="sendmessage"> Send Message </button>
+        <button class="downloadresume"> Download Resume   </button>
+      </div>
+
+      <div class="footerdown">
+        <p class="downtag"> Living, learning, & leveling up one day at a time. </p>
+
+        <div class="socialicons">
+          <div class="footersocial">
+            <a href="https://twitter.com/DarshanPawar010" class="socialiconstyle"> <i class="fab fa-twitter"></i> </a>
+          </div>
+          <div class="footersocial">
+            <a href="https://www.instagram.com/darshan_pawar_010.h/" class="socialiconstyle"> <i class="fab fa-instagram"></i> </a>
+          </div>
+          <div class="footersocial">
+            <a href="https://www.linkedin.com/in/darshan-p-269468135/" class="socialiconstyle"> <i class="fab fa-linkedin-in"></i> </a>
+          </div>
+          <div class="footersocial">
+            <a href="https://www.quora.com/profile/Darshan-Pawar-30" class="socialiconstyle"> <i class="fab fa-quora"></i> </a>
+          </div>
+          <div class="footersocial">
+            <a href="https://www.facebook.com/darshan.pawar.77985?ref=bookmarks" class="socialiconstyle"> <i class="fab fa-facebook-f"></i> </a>
+          </div>
+          <div class="footersocial">
+            <a href="https://www.behance.net/darshanpawar1" class="socialiconstyle"> <i class="fab fa-behance"></i> </a>
+          </div>
+
+          </div>  
+            <p class="copyright"> <b> Handcrafted by me </b> <i class="far fa-copyright"></i> Darshan Pawar </p>
+          </div>
+
+        </div>
+        
+        
+        
+      
+    
+
+
+
+  </body>
+</html>
